@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title  %}
+    
+    <title> Home Page </title>
+
+{% endblock title %}   
+
+
+
+
+{% block content %}
+    
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-6 mt-5 shadow-none p-3 mb-3 bg-light rounded" >
+      <img src = "{% static 'images/notes1.jpg'%}" height="80%" width = '80%' class = "rounded">
+    </div>
+    <div class="col col-lg-6 mt-5  shadow-none p-3 mb-3 bg-light rounded ">
+      <img src = "{% static 'images/notes2.jpg'%}" height="80%" width = '80%' class = "rounded">
+  </div>
+</div>
+
+<div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-success">Welcome!</p></center>
+                <center><p class="h1 mt-3">Plan your day better. Get your life organized.</p></center>
+               
+
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's Get Started</button></a></center>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+
+
